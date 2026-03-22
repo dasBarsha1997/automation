@@ -6,8 +6,11 @@
 trigger:
 - main
 
+#pool:
+#  vmImage: ubuntu-latest
+
 pool:
-  vmImage: ubuntu-latest
+  name: MyAgents   # 👈 use the pool you created
 
 steps:
 - task: Maven@3
